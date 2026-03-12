@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.logo, header nav, header button{
+    display: inline-block;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    padding: 30px 0;
+    background: #fff;
+}
+.logo-icon{
+    background: linear-gradient(rgb(187, 74, 241), #e243ae);
+    padding: 20px;
+    border-radius: 50%;
+}
+.logo-text{
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav ul{
+    width: 100%;
+    margin-left: 120%;
+}
+
+nav ul li{
+    margin-left: 15px;
+}
+nav ul li a{
+    color: #3d3d3d;
+}
+.header-button{
+    float: right;
+}
+.header-button button{
+    border: none;
+    background: transparent;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
