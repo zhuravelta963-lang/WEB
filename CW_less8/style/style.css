@@ -95,12 +95,152 @@ nav ul li a:hover{
 }
 .advantages{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 65px 0;
+    column-gap: 30px;
+    text-align: center;
 }
-.advantages article svg{
-    background: #f4e8ff;
+.catalog-cards{
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+}
+.card{
+    border: 1px solid #dfdfdf;
+    border-radius: 15px;
+    max-width: 350px;
+}
+.advantages article span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #f3e8ff;
     border-radius: 50%;
-    padding: 30px;
-    color: #0f0f0f;
+    color: #9612f4;
+    margin-bottom: 16px;
+}
+.advantages article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages article h3{
+    margin-bottom: 10px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.advantages article p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #f9fafc
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0;
+
+}
+.card img{
+    width: 350px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+}
+.catalog h2{
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.catalog > p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #aeaeae;
+    margin-bottom: 50px;
+}
+.label{
+    font-size: 12px;
+    line-height: 16px;
+    color: #9c1af6;
+    text-transform: uppercase;
+
+}
+.card-text{
+    padding: 16px;
+}
+.card-text h3{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.card-text p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #5a5859;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.cost{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #9c1af6;
+}
+.instock{
+    font-size: 12px;
+    line-height: 16px;
+    color: #62f140;
+    margin-bottom: 20px;
+}
+.card-btn{
+    display: flex;
+    width: 100%;
+    aligh-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    background: #9c1af6;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.card-btn:hover{
+    background: #9c1af6;
+
+}
+.catalog button{
+    background: #9c1af6;
+}
+.card:hover{
+
+}
+.catalog > button{
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #9c1af6;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
