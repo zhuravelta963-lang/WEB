@@ -1,0 +1,89 @@
+.wrapper{
+    width: 1440px;
+    height: 4422px;
+    background: #fff;
+    font-family: "Karla", sans-serif;
+}
+.logo-upper{
+    width: 112px;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 40px 60px 250px;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 200px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.upper li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 60px 40px 0;
+}
+.upper a{
+    text-decoration: none;
+    color: #58575d;
+    font-size: 12px;
+}
+.upper ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-right: 0;
+}
+.special-li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.special-li img{
+    padding-right: 10px;
+}
+.section{
+    background-image: url("../image/IMAGE bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+}
+section h3{
+    text-align: center;
+    font-size: 50px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+}
+section h1{
+    text-align: center;
+    font-size: 47px;
+    color: #FFFFFF;
+}
+section p{
+    text-align: center;
+    font-size: 17px;
+    color: #FFFFFF;
+}
