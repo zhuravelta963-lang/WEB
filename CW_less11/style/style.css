@@ -1,0 +1,126 @@
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+*, *:before, *:after {
+    box-sizing: inherit; <!---->
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #C9A5AA;
+}
+.wrapper{
+    margin: 12px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 8px;
+    background: #F4D3D3;
+    padding: 10px 0;
+}
+.menu{
+    font-family: "Arial Black", sans-serif;
+        padding: 10px 0;
+        display: block;
+}
+.nav li{
+    padding: 6px 0;
+    display: block;
+    width: 100%;
+}
+.nav{
+    width: 100%;
+}
+.nav > li:hover{
+    background: #FFFF;
+}
+:link{
+    /*background: #FFFF;*/
+    color: #006EBE;
+}
+:link:hover{
+    color: #5EAAE0;
+}
+:visited{
+    color: #0B2570;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background: #FFFF;
+    padding: 16px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 16px;
+    row-gap: 16px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.data{
+    display: flex;
+    column-gap: 6px;
+    background: #E9E9E9;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+}
+h1{
+    font-size: 24px;
+}
+.info h2, .movie h2{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+figure{
+    background: #F4D3D3;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+}
+figure img{
+    display: block;
+    max-width: 100%;
+}
+figcaption{
+    padding: 10px 0 10px 0;
+}
+.movie ol li{
+    padding: 10px 10px 10px 30px;
+    border-bottom: 1px solid #C9A5AA;
+}
+ol > li::before{
+    content: counter(list-item) ".";
+    display: inline-block;
+    margin-left: -20px;
+    width: 20px;
+}
+ol > li:last-child{
+    border-bottom: none;
+}
+ol > li:nth-child(1){
+    background: #FCF5E9;
+}
+ol > li:nth-child(2){
+    background: #FCE9E9;
+}
+footer{
+    background: #F4D3D3;
+    padding: 1px;
+    border-radius: 0 0 8px 8px;
+}
