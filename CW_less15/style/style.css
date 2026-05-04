@@ -1,0 +1,19 @@
+.wrapper{
+    max-width: 800px;
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #f3f4f5;
+    background: #fff;
+    border-radius: 20px;
+}
+html{
+    background: radial-gradient(#eff6ff, #f6f8fd);
+    font-family: SansSerif, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 550;
+    color: #4843ef;
+    margin: 40px 0 20px 0;
+}
