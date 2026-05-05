@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*:root{*/
+/*    --primary: #3459db;*/
+/*    --accent: #dccc2d;*/
+/*    --transition-speed: 0.5s;*/
+/*    --timing-bounce: cubic-bezier(0.2, 0.2, 0.2, 1);*/
+/*}*/
+/*.card{*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    background: var(--accent);*/
+/*    transition: transform var(--transition-speed); var(--timing-bounce) background var(--transition-speed) ease-in-out;*/
+/*}*/
+/*.card:hover{*/
+/*    transform: scale(1.2) rotate(45deg);*/
+/*    background: var(--primary);*/
+/*}*/
+/*@keyframes moveLight{*/
+/*    0% {top: 0; left: 0; opacity: 0;}*/
+/*    25% {opacity: 1;}*/
+/*    50% {top: 80%; left: 50%; scale: 1.5;}*/
+/*    100% {top: 0; left: 0; opacity: 0;}*/
+/*}*/
+/*.light{*/
+/*    width: 300px;*/
+/*    height: 400px;*/
+/*    background: var(--primary);*/
+/*    position: absolute;*/
+/*    animation: moveLight 8s;*/
+/*}*/
+:root{
+    --bg-card: #3579;
+    --light-color: #dddd9b;
+    --speed: 0.5s;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background: var(--bg-card);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transfrorm var(--speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover{
+    transform: translateY(-15px) scale(1.2);
+    cursor: pointer;
+}
+.light{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: var(--light-color);
+    filter: blur(50px);
+    border-radius: 50%;
+    animation: animation-light 8s infinite;
+}
+@keyframes animation-light{
+    0% {top: -20%; left: -20%}
+    50% {top: 60%; left: 70%; background: #eaea2b;}
+    75% {top: 30%; left: 10%; background: #2beab7;}
+    100% {top: 30%; left: 10%; background: var(--light-color);}
+}
