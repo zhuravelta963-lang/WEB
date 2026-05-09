@@ -40,14 +40,14 @@
         <form class = "profesion-infa">
             <h2>Професійна інформація</h2>
             <div class = "form-group">
-                    <label>
-                        Бажана позиція<br>
-                        <input class = "desire" type="text" name = "name" placeholder="Оберіть пропозицію" required>
-                    </label>
-                    <label>
-                        Досвід роботи (років)<br>
-                        <input type = "number" name = "name" min = "0" max = "50" placeholder = "0-50" required>
-                    </label>
+                <label>
+                    Бажана позиція<br>
+                    <input class = "desire" type="text" name = "name" placeholder="Оберіть пропозицію" required>
+                </label>
+                <label>
+                    Досвід роботи (років)<br>
+                    <input type = "number" name = "name" min = "0" max = "50" placeholder = "0-50" required>
+                </label>
             </div>
             <label>
                 Технології та навички<br>
@@ -68,17 +68,18 @@
             </div>
             <label>
                 Резюме (PDF, DOC)<br>
-                <input class = "technologie-skills" = "file" name = "name" placeholder = "Вибрати файл" required>
+                <input class = "technologie-skills resume" type = "file" name = "name" placeholder = "Вибрати файл" required>
             </label>
             <label>
                 Коротко про себе<br>
                 <textarea name = "name" placeholder = "Розкажіть про себе та чому ви гідні нас" required></textarea>
             </label>
         </form>
-        <label>
-            <input type = "checkbox" name = "name" placeholder = "Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною" required>
+        <label class="checkbox-label">
+            <input type="checkbox" name="name" required>
+            Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною
         </label>
-        <button type = "submit">Надіслати</button>
+        <button type = "submit">Надіслати заявку</button>
     </main>
     <footer>🎇<span>Підказки по заповненню:</span>
         <ul>
