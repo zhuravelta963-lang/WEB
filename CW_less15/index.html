@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link type = "text/css" href = "style/style.css" rel = "stylesheet">
+    <link rel = "stylesheet" href = "style/normalizer.css">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
 </head>
 <body>
@@ -18,21 +19,21 @@
             <h2>Персональні дані</h2>
             <div class = "form-group">
                 <label>
-                    Ім'я<br>
+                    Ім'я *<br>
                     <input type="text" name = "name" placeholder="Введіть ваше ім'я" required>
                 </label>
                 <label>
-                    Прізвище<br>
+                    Прізвище *<br>
                     <input type = "text" name = "name" placeholder = "Введіть ваше прізвище" required>
                 </label>
             </div>
             <div class = "form-group">
                 <label>
-                    Email<br>
+                    Email *<br>
                     <input type = "email" name = "name" placeholder = "exaple@gmail.com" required>
                 </label>
                 <label>
-                    Телефон <br>
+                    Телефон *<br>
                     <input type = "tel" name = "name" placeholder = "+380 XXXXXXX" required>
                 </label>
             </div>
@@ -41,16 +42,16 @@
             <h2>Професійна інформація</h2>
             <div class = "form-group">
                 <label>
-                    Бажана позиція<br>
+                    Бажана позиція *<br>
                     <input class = "desire" type="text" name = "name" placeholder="Оберіть пропозицію" required>
                 </label>
                 <label>
-                    Досвід роботи (років)<br>
+                    Досвід роботи (років) *<br>
                     <input type = "number" name = "name" min = "0" max = "50" placeholder = "0-50" required>
                 </label>
             </div>
-            <label>
-                Технології та навички<br>
+            <label class = "label">
+                Технології та навички *<br>
                 <input class = "technologie-skills" type = "email" name = "name" placeholder = "React, Python, TypeScript..." required>
             </label>
         </form>
@@ -66,13 +67,13 @@
                     <input type = "text" name = "name" placeholder = "https://yourportfolio.youtube.com">
                 </label>
             </div>
-            <label>
-                Резюме (PDF, DOC)<br>
+            <label class = "label">
+                Резюме (PDF, DOC) *<br>
                 <input class = "technologie-skills resume" type = "file" name = "name" placeholder = "Вибрати файл" required>
             </label>
-            <label>
-                Коротко про себе<br>
-                <textarea name = "name" placeholder = "Розкажіть про себе та чому ви гідні нас" required></textarea>
+            <label class = "label">
+                Коротко про себе *<br>
+                <textarea class = "about" name = "name" placeholder = "Розкажіть про себе та чому ви гідні нас" required></textarea>
             </label>
         </form>
         <label class="checkbox-label">
